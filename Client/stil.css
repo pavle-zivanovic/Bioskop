@@ -1,0 +1,193 @@
+.GlavniKontejner{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url("bioskop.jpg");
+}
+
+.Forma{
+    display: flex;
+    flex-direction: column;
+}
+
+#Forma2{
+    margin-top: 120px;
+    margin-right: 20px;
+}
+
+#Forma3{
+    margin-top: 120px;
+    flex: 10 10 200px;
+}
+
+.redPlatno{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    font-size: 25px;
+    color: skyblue;
+    font-weight: bold;
+}
+
+.redSalaPrazno{
+    height: 15px;
+}
+
+.redSale{
+    display: flex;
+}
+
+.redSala{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.redPrikaziProjekcije{
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+}
+
+.redRezervisiteSedista{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redUpisi, .redIzmeni, .redObrisi{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redNazivSala{
+    display: flex;
+    justify-content: center;
+}
+
+.redInputIme, .redInputPrezime, .redInputEmail{
+    margin: 16px;
+    justify-content: flex-end;
+    padding: 2px;
+}
+
+.redIme, .redPrezime, .redEmail{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+
+.redBioskop, .redFilm, .redProjekcija{
+    display: flex;
+    margin: 15px;
+}
+
+.labelaZaTriDugmica{
+    width: 90px;
+    font-size: 22px;
+}
+
+.labelazabrojreda{
+    width: 20px;
+}
+
+label{
+    margin: 3px;
+    font-size: 25px;
+    font-weight: bold;
+    color: skyblue;
+}
+
+.labelaNazivSala{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.labelBioskop, .labelFilm, .labelProjekcija{
+    display: flex;
+    width: 120px;
+    justify-content: flex-end;
+}
+
+.dugmeSala{
+    width: 40px;
+    height: 30px;
+    margin: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border-color: lightgray;
+    border-width: 2px;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.dugmeUpisi, .dugmeIzmeni, .dugmeObrisi{
+    width: 120px;
+    height: 30px;
+    font-size: 21px;
+    background-color:cornflowerblue;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.dugmeObrisi{
+    background-color:red;
+}
+
+.dugmeIzmeni{
+    background-color: coral;
+}
+
+.dugmeRezervisiteSedista, .dugmePrikaziProjekcije{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 35px;
+    background-color:cornflowerblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dugmeRezervisiteSedista{
+    margin-bottom: 75px;
+    margin-left: 100px;
+}
+
+.dugmeIzaberiBioskop, .dugmeIzaberiFilm, .dugmeIzaberiProjekciju{
+    width: 60px;
+    height: 34px;
+    margin-left: 15px;
+    background-color:coral;
+    font-weight: bold;
+}
+
+.selectBioskop, .selectFilm, .selectProjekcija{
+    margin: 2px;
+    background-color:cornflowerblue;
+    font-size: 18px;
+    width: 243px;
+    height: 30px;
+}
+
+.inputIme, .inputPrezime, .inputEmail{
+    background-color:coral;
+    font-weight: bold;
+}
+
+.tabela{
+    background-color:coral;
+}
+
+table,tr,th, td{
+    border: 1px solid skyblue;
+
+}
+
+table
+{
+    border-collapse: collapse; 
+}
+
+
