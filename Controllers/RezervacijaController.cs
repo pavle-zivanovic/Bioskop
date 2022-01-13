@@ -114,7 +114,16 @@ namespace WEBP.Controllers
                 return BadRequest("Nevalidan ID!");
             }
 
-            try
+            var r = Bioskop.Rezervacije.Where(r => r.ID == IDRezervacije).FirstOrDefault();
+
+            if(r == null)
+            {
+                return BadRequest("Rezervacija ne postoji!");
+            }
+            
+            else
+            {
+                try
             {
                 var rezervacija = await Bioskop.Rezervacije.FindAsync(IDRezervacije);
                 int i=0;
@@ -135,6 +144,7 @@ namespace WEBP.Controllers
             {
                 return BadRequest("Doslo je do greske:" + e.Message);
             }
+            }
         }
 
         [Route("ObrisatiRezervaciju/{IDRezervacije}")]
@@ -146,6 +156,15 @@ namespace WEBP.Controllers
                 return BadRequest("Nevalidan ID!");
             }
 
+            var r = Bioskop.Rezervacije.Where(r => r.ID == IDRezervacije).FirstOrDefault();
+
+            if(r == null)
+            {
+                return BadRequest("Rezervacija ne postoji!");
+            }
+
+            else
+            {
             try
             {
                 var rezervacija = await Bioskop.Rezervacije.FindAsync(IDRezervacije);
@@ -161,6 +180,7 @@ namespace WEBP.Controllers
             catch (Exception e)
             {
                 return BadRequest("Doslo je do greske:" + e.Message);
+            }
             }
         }
     }
