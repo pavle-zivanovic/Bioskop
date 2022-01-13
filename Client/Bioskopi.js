@@ -309,11 +309,11 @@ UpisiRezervaciju(){
     let sedista = [];
     sedista = this.minikont1.querySelectorAll("#dugmeCrnoSalaID");
     if(sedista.length == 0){
-        alert("Morate odabrati bar jedno sediste!");
+        alert("Morate odabrati bar jedno sedište!");
         status = false;
     }
     if(sedista.length > 6){
-        alert("Maksimalno mozete izabrati 6 sedista!");
+        alert("Maksimalno možete izabrati 6 sedišta!");
         status = false;
     }
     sedista.forEach(s =>{
@@ -383,7 +383,7 @@ UpisiRezervaciju(){
             console.log(p);
             alert ("Greška prilikom rezervisanja.");
         });
-        alert("Uspesno ste izvrsili rezervaciju :)");
+        alert("Uspešno ste izvršili rezervaciju :)");
     })
 }
 }
@@ -411,7 +411,7 @@ IzmeniRezervaciju(rezervacijaID, salaID, projekcijaID, sedista){
     var status = true;
     sedistanew = this.minikont1.querySelectorAll("#dugmeCrnoSalaID");
     if(sedistanew.length != sedista.length){
-        alert("Morate odabrati isti broj sedista!");
+        alert("Morate odabrati isti broj sedišta!");
         status = false;
     }
     if(status == true){
