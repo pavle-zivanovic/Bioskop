@@ -348,7 +348,7 @@ UpisiRezervaciju(){
                                 rezervacijaID = rez.id;
                                 cena = rez.cena;
 
-                                alert("Cena Vase rezervacije je: "+cena);
+                                alert("Cena Vaše rezervacije je: "+cena);
                                 let redProjekcija = this.minikont1.querySelector(".redProjekcija");
                                 let optionEl = redProjekcija.querySelector("select");
                                 var projekcijaID = optionEl.options[optionEl.selectedIndex].value;
